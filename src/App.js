@@ -1,7 +1,9 @@
+import Navibar from './navibar/Navibar';
+
 function App() {
   return (
     <div>
-      <p>app</p>
+      <Navibar />
     </div>
   );
 }
