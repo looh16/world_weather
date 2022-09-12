@@ -1,30 +1,41 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getAllcountries } from '../../redux/countries';
-import Country from './Country';
+import PropTypes from 'prop-types';
+import * as BsIcon from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
-const Countries = () => {
-  const countries = useSelector((state) => state.countries);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!countries.length) {
-      dispatch(getAllcountries());
-    }
-  }, []);
+const Countries = ({ country }) => {
+  const navigate = useNavigate();
+  const navigateDetails = () => {
+    navigate('/details', { state: { capitalName: country.capital } });
+  };
 
   return (
     <div>
-      {
-        countries.map((country) => (
-          <Country
-            key={country.name.official}
-            country={country}
+      <div>
+        <h1>{country.name.official}</h1>
+        <p>
+          Capital: &nbsp;
+          {country.capital}
+        </p>
+        <p>
+          Continent: &nbsp;
+          {country.continents[0]}
+        </p>
+        <p>
+          Flag: &nbsp;
+          <img
+            src={country.flags.png}
+            width="200"
+            alt=""
           />
-        ))
-      }
+        </p>
+        <BsIcon.BsFillArrowRightCircleFill className="arrow" name={country.name.official} onClick={navigateDetails} key={country.name.official} />
+      </div>
     </div>
   );
 };
+
+Countries.propTypes = {
+  name: PropTypes.string,
+}.isRequired;
 
 export default Countries;

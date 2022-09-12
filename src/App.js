@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation';
-import Countries from './components/country/Countries';
+import Home from './components/home/Home';
 import Details from './components/country/Details';
 
 const App = () => (
@@ -13,7 +13,7 @@ const App = () => (
           exact
           path="/"
           element={
-            <Countries />
+            <Home />
           }
         />
         <Route
