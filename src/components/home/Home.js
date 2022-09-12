@@ -17,7 +17,6 @@ const Home = () => {
   return (
     <section>
       <div>
-        <h2>Information about all Countries and their weather</h2>
         <input type="text" placeholder="Search" onChange={(event) => { setTextFilterInput(event.target.value); }} />
       </div>
       <div>
