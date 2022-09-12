@@ -8,6 +8,7 @@ const Navibar = () => (
   <Navbar expand="lg" variant="light" bg="light">
     <Container>
       <Nav.Link href="#home"><BiHome /></Nav.Link>
+      <Navbar.Text>World Weather</Navbar.Text>
       <Nav.Link href="#"><BiMicrophone /></Nav.Link>
       <Nav.Link href="#"><IoMdSettings /></Nav.Link>
     </Container>
