@@ -7,11 +7,13 @@ import { IoMdSettings } from 'react-icons/io';
 
 const Navigation = () => (
   <Navbar expand="lg" variant="light" bg="light">
-    <Container>
+    <Container className="d-flex">
       <Nav.Link as={Link} to="/"><BiHome /></Nav.Link>
       <Navbar.Text>Countries Weather Information</Navbar.Text>
-      <Nav.Link href="#"><BiMicrophone /></Nav.Link>
-      <Nav.Link href="#"><IoMdSettings /></Nav.Link>
+      <div className="d-flex">
+        <BiMicrophone />
+        <IoMdSettings />
+      </div>
     </Container>
   </Navbar>
 );

@@ -9,26 +9,22 @@ const Countries = ({ country }) => {
   };
 
   return (
-    <div>
+    <div className="container d-flex flex-column justify-content-center">
+
+      <BsIcon.BsFillArrowRightCircleFill className="align-self-end" name={country.name.official} onClick={navigateDetails} key={country.name.official} />
       <div>
-        <h1>{country.name.official}</h1>
-        <p>
-          Capital: &nbsp;
-          {country.capital}
-        </p>
+        <h4>{country.name.official}</h4>
         <p>
           Continent: &nbsp;
           {country.continents[0]}
         </p>
         <p>
-          Flag: &nbsp;
           <img
             src={country.flags.png}
             width="200"
             alt=""
           />
         </p>
-        <BsIcon.BsFillArrowRightCircleFill className="arrow" name={country.name.official} onClick={navigateDetails} key={country.name.official} />
       </div>
     </div>
   );
