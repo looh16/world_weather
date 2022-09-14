@@ -2,13 +2,13 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const details = [];
-const key = 'c34f51086fa8ad0afba440ec3377ae1c';
+const key = '80a9080ffc6c68f4a9b318e94a26b439';
 const GET_WEATHER_DETAILS = 'rockets/GET_WEATHER_DETAILS';
 
 export const getWeatherDetails = createAsyncThunk(
   GET_WEATHER_DETAILS,
-  async (capital) => {
-    const response = await axios.get(`http://api.weatherstack.com/current?access_key=${key}&query=${capital}&units=m`);
+  async (cord) => {
+    const response = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${cord.lat}&lon=${cord.lon}&appid=${key}`);
     const responseResult = response.data;
     return { details: responseResult };
   },
