@@ -1,0 +1,8 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.air_quality {
+  color: red;
+}
