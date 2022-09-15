@@ -1,75 +1,44 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Weather Website
 
-> Description the project.
+>simple Weather Website, where it is possible to list all existing countries in the world and with the option to see the statistics related to pollution for each specific country..
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
+# Getting Started
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites: 
+Any kind of browser. 
 
-### Setup
+### Setup:
+    1. Clone the repository
+    2. Then open the folder in your local environment 
+    3. In terminal console run:
+       - npm install
+       - npm start
 
-### Install
+## 👤 **Author**
 
-### Usage
+- GitHub: https://github.com/looh16
+- Twitter: https://twitter.com/custodiolanga1
+- LinkedIn: https://www.linkedin.com/in/custodio-serafim
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
+
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Original design idea by Nelson Sakwa on Behance.
+
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/looh16/bookstore/blob/34137715daf40f76ef083157c8c9c9e4d7aaaada/LICENSE)
