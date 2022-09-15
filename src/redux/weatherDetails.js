@@ -8,7 +8,7 @@ const GET_WEATHER_DETAILS = 'details/GET_WEATHER_DETAILS';
 export const getWeatherDetails = createAsyncThunk(
   GET_WEATHER_DETAILS,
   async (cord) => {
-    const response = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${cord.lat}&lon=${cord.lon}&appid=${key}`);
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${cord.lat}&lon=${cord.lon}&appid=${key}`);
     const responseResult = response.data;
     return { details: responseResult };
   },
