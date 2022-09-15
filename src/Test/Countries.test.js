@@ -7,14 +7,14 @@ import Countries from '../components/country/Countries';
 
 test('renders correctly', () => {
   const country = {
-    name : {
-      official : "Mozambique"
+    name: {
+      official: 'Mozambique',
     },
-    continents: ["Africa","Asia"],
-    "flags": {
-      "png": "https://flagcdn.com/w320/fi.png",
+    continents: ['Africa', 'Asia'],
+    flags: {
+      png: 'https://flagcdn.com/w320/fi.png',
     },
-  }
+  };
   const tree = Renderer.create(
     <React.StrictMode>
       <Provider store={store}>

@@ -1,9 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const details = [];
+export const details = [];
 const key = '80a9080ffc6c68f4a9b318e94a26b439';
-const GET_WEATHER_DETAILS = 'rockets/GET_WEATHER_DETAILS';
+const GET_WEATHER_DETAILS = 'details/GET_WEATHER_DETAILS';
 
 export const getWeatherDetails = createAsyncThunk(
   GET_WEATHER_DETAILS,
