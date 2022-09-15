@@ -6,4 +6,3 @@ describe('test fetching data', () => {
     await fetchingCountries().then((data) => expect(data.data[0].common).toBe('Finland'));
   });
 });
-
