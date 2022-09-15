@@ -2,7 +2,7 @@
 
 # Weather Website
 
->simple Weather Website, where it is possible to list all existing countries in the world and with the option to see the statistics related to pollution for each specific country..
+>Simple Weather Website, where it is possible to list all existing countries in the world and with the option to see the statistics related to pollution for each specific country..
 
 
 ## Built With
